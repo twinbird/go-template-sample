@@ -1,0 +1,18 @@
+{{define "layout"}}
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{.Title}}</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div class="menu">
+			{{template "menu" .}}
+		</div>
+
+		<div class="container">
+			{{template "contents" .}}
+		</div>
+	</body>
+</html>
+{{end}}
